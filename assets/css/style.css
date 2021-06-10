@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Roboto;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url('../fontes/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+	font-family: RobotoItalic;
+	src: url('../fontes/Roboto/Roboto-Italic.ttf');
+}
+
+@font-face {
+	font-family: RobotoLight;
+	src: url('../fontes/Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+	font-family: OdibeeSans-Regular;
+	src: url('../fontes/OdibeeSans-Regular.ttf');
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container > span{
+    color: #eb2f06;
+    font-weight: bold;
+}
+
+#background1{
+    background-image: url('../img/dev.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.contPerguntas{
+    margin-top: 20px;
+}
+.container .nome{
+    margin-bottom: 10px;
+}
+.container input[type=text]{
+    width: 280px;
+    height: 30px;
+    border: 0;
+    border: 1px solid #000;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 5px;
+}
+.contPerguntas .pergunta{
+    font-family: RobotoItalic;
+    padding: 10px 0 10px 0;
+    color: #3498db;
+    text-shadow: 1px 2px 1px #000;
+    font-size: 1.3em;
+}
+
+.contPerguntas h4{
+    font-family: RobotoItalic;
+    padding-bottom: 10px;
+    color: #2c3e50;
+}
+
+.container h2{
+    text-align: center;
+    font-family: OdibeeSans-Regular;
+    font-size: 2.8em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.perguntasInt{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 6px;
+}
+.perguntasInt p{
+    font-family: RobotoLight;
+}
+
+.perguntasInt:hover{
+    background-color: #ecf0f1b9;
+    cursor: pointer;
+}
+.perguntasInt input[type=checkbox]{
+    margin-right: 12px;
+    border: none;
+    border: 1px solid #000;
+}
+
+.contRespostas h2{
+    color: #e74c3c;
+}
+
+.contRespostasInt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contRespostasInt p{
+    color: #27ae60;
+    text-shadow: 1px 1px 2px #000;
+    font-size: 1.4em;
+}
+
+.contRespostasInt button{
+    padding: 10px;
+    border: 0;
+    border: 1ps solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contRespostasInt input[type=text]{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.contRespostasIntInputs{
+    display: flex;
+}
+
+.contRespostasIntInputs label{
+    font-size: 1.4em;
+    color: #27ae60;
+    text-shadow: 2px 1px 1px #000;
+}
+
+footer p{
+    text-align: center;
+    padding: 30px 0 30px 0;
+    color: #2c3e50;
+    background-color: rgba(189, 195, 199, 0.5);
+    margin-top: 20px;
+}
+
+#background2{
+    background-color: #3498db;
+}
+
+#background2 .container p, h4{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#background2 .container p{
+    margin-bottom: 10px;
+}
+
+#contDescription{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+#lista{
+    width: 240px;
+    height: 360px;
+    padding-left: 10px;
+    padding-top: 20px;
+    border-radius: 4px;
+    border: 4px solid #bdc3c7;
+    background-color: #fff;
+    overflow-y: hidden;
+}
+
+#lista p{
+    cursor: pointer;
+    padding: 15px;
+    margin-right: 8px;
+}
+
+#lista p:hover{
+    background-color: #bdc3c7;
+}
+
+
+#imagem{
+    width: 280px;
+    height: 300px;
+    border-radius: 4px;
+}
+
+#imagem img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+#descricao{
+    width: 260px;
+    height: 290px;
+    border-radius: 20px;
+    background-color: #82ccdd;
+    border: 4px solid #2980b9;
+    padding-bottom: 30px;
+}
+
+#descricao p{
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+@media (max-width: 779px){
+    #descricao{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 519px){
+    #lista{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #imagem{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+}
+
+.active{
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+}

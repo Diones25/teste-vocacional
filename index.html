@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Teste Vocacional</title>
+</head>
+<body>
+    
+    <section id="background1">
+        <main class="container">
+
+            <h2>Quiz Teste Vocacional</h2>
+
+            <div id="content">
+                <div class="nome">
+                    <label for="nome">Nome de usuário:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+    
+                <span>OBS: Escolha uma opção por pergunta*</span>
+    
+                <div class="contPerguntas">
+                    <h4 class="pergunta">Pergunta 01 - Quais tipos de problemas você prefere resolver?</h4>
+                    <h4>Opções:</h4>
+    
+                    <div class="perguntas">
+                        <label class="perguntasInt" for="itemPer01A">
+                            <input class="checkboxA" type="checkbox" name="resposta" id="itemPer01A" value="A1">
+                            <p><span>a)</span> Que envolva números e raciocínio lógico.</p>
+                        </label>
+    
+                        <label class="perguntasInt" for="itemPer01B">
+                            <input class="checkboxB" type="checkbox" name="resposta" id="itemPer01B" value="B1">
+                            <p><span>b)</span> Que necessitem intermediação de conflitos pessoais.</p>
+                        </label>
+    
+                        <label class="perguntasInt" for="itemPer01C">
+                            <input class="checkboxC" type="checkbox" name="resposta" id="itemPer01C" value="C1">
+                            <p><span>c)</span> Que envolva cuidar da saúde de pessoas</p>
+                        </label>
+    
+                    </div>
+                </div>
+    
+                <div class="contPerguntas">
+                    <h4 class="pergunta">Pergunta 02 - Quais disciplinas você mais gostava de estudar na escola ?</h4>
+                    <h4>Opções:</h4>
+    
+                    <div class="perguntas">
+                        <label class="perguntasInt" for="itemPer02A">
+                            <input class="checkboxA" type="checkbox" name="resposta" id="itemPer02A" value="A2">
+                            <p><span>a)</span> Matemática .</p>
+                        </label>
+    
+                        <label class="perguntasInt" for="itemPer02B">
+                            <input class="checkboxB" type="checkbox" name="resposta" id="itemPer02B" value="B2">
+                            <p><span>b)</span> Sociológia</p>
+                        </label>
+    
+                        <label class="perguntasInt" for="itemPer02C">
+                            <input class="checkboxC" type="checkbox" name="resposta" id="itemPer02C" value="C2">
+                            <p><span>c)</span> Biológia</p>
+                        </label>
+    
+                    </div>
+                </div>
+    
+                <div class="contPerguntas">
+                    <h4 class="pergunta">Pergunta 03 - Ao se formar você prefere:</h4>
+                    <h4>Opções:</h4>
+    
+                    <div class="perguntas">
+                        <label class="perguntasInt" for="itemPer03A">
+                            <input class="checkboxA" type="checkbox" name="resposta" id="itemPer03A" value="A3">
+                            <p><span>a)</span> Abir uma agência ou trabalhar em uma sala de aula</p>
+                        </label>
+    
+                        <label class="perguntasInt" for="itemPer03B">
+                            <input class="checkboxB" type="checkbox" name="" id="itemPer03B" value="B3">
+                            <p><span>b)</span> Trabalhar em um escritório</p>
+                        </label>
+    
+                        <label class="perguntasInt" for="itemPer03C">
+                            <input class="checkboxC" type="checkbox" name="" id="itemPer03C" value="C3">
+                            <p><span>c)</span> Trabalhar em uma instituição para tratar pessoas doentes</p>
+                        </label>
+    
+                    </div>
+                </div>
+    
+                <div class="contRespostas">
+                    <h2>Respostas do teste vocacional</h2>
+                    <div class="contRespostasInt">
+                        <p>Pontos por opção</p>
+    
+                        <div class="contRespostasIntInputs">
+                            <div>
+                                <label for="">a:</label>
+                                <input type="text" name="" id="resA">
+                            </div>
+    
+                            <div>
+                                <label for="">b:</label>
+                                <input type="text" name="" id="resB">
+                            </div>
+    
+                            <div>
+                                <label for="">c:</label>
+                                <input type="text" name="" id="resC">
+                            </div>
+                        </div>
+    
+                        <div>
+                            <button type="submit" onclick="vocacao()">Realizar Teste</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!--content-->
+
+            
+        </main>
+
+        <footer>
+            <p>Rodapé</p>
+        </footer>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
